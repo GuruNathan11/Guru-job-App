@@ -1,0 +1,68 @@
+
+
+
+
+thead, tbody, tfoot, tr, td, th {
+  border-color: indigo;
+  border-style: double;
+  border-width: thin;
+  /* color: greenyellow; */
+}
+
+table {
+  border-collapse: collapse;
+  margin: 50px;
+  font-family: Arial, sans-serif;
+  width: 90%;
+  background-color:#0acc0a3b;
+  border: 2px solid #7111c0;
+}
+th, td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+th {
+  background-color: dodgerblue;
+  color: 	black;
+  text-align: center;
+}
+
+
+.guru{
+  justify-content: center;
+  text-align: center;
+}
+
+.pagination-container {
+  display: flex;
+  justify-content: flex-start;
+  padding-bottom: 10px;
+  margin-top: 50px;
+}
+
+.pagination {
+  list-style: none;
+  display: flex;
+  gap: 0px;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  background-color: yellow;
+  cursor: pointer;
+  color: blue;
+  border-color: navy;
+ display: flex;
+}
+
+.pagination button:hover {
+  background-color: rgb(213, 200, 224);
+}
+
+.pagination .page-item:not(:last-child) {
+  margin-right: 2px; 
+}
+
+
