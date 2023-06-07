@@ -30,7 +30,6 @@ function App() {
 
   function Table(props) {
     const { data } = props;
-    const [searchTerm, setSearchTerm] = useState("");
     const [currentPage, setCurrentPage] = useState(1);
     const [rowsPerPage] = useState(10);
   
