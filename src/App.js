@@ -32,17 +32,13 @@ function App() {
     const { data } = props;
     const [currentPage, setCurrentPage] = useState(1);
     const [rowsPerPage] = useState(10);
-  
-    const filteredData = data.filter((item) =>
-      item.userName.toLowerCase().includes(searchTerm.toLowerCase())
-    );
-  
+   
     const indexOfLastRow = currentPage * rowsPerPage;
     const indexOfFirstRow = indexOfLastRow - rowsPerPage;
-    const currentRows = filteredData.slice(indexOfFirstRow, indexOfLastRow);
+    const currentRows = data.slice(indexOfFirstRow, indexOfLastRow);
   
     const pageNumbers = [];
-    for (let i = 1; i <= Math.ceil(filteredData.length / rowsPerPage); i++) {
+    for (let i = 1; i <= Math.ceil(data.length / rowsPerPage); i++) {
       pageNumbers.push(i);
     }
 
